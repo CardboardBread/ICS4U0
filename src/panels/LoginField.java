@@ -22,6 +22,7 @@ public class LoginField extends JFrame {
 	private JTextField textUsername = new JTextField(20);
 	private JPasswordField fieldPassword = new JPasswordField(20);
 	private JButton buttonLogin = new JButton("Login");
+	private JButton buttonSignUp = new JButton("Sign Up");
 
 	public LoginField() {
 		super("JPanel Login Dialog");
@@ -53,6 +54,9 @@ public class LoginField extends JFrame {
 		constraints.anchor = GridBagConstraints.CENTER;
 		panel.add(buttonLogin, constraints);
 		
+		constraints.anchor = GridBagConstraints.EAST;
+		panel.add(buttonSignUp, constraints);
+				
 		panel.setBorder(BorderFactory.createTitledBorder(
 				BorderFactory.createEtchedBorder(), "Login Panel"));
 		
